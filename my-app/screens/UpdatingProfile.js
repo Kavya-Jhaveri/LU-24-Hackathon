@@ -234,18 +234,18 @@ const UpdatingProfile = () => {
         <View style={[styles.groupChild, styles.groupPosition]} />
         <View style={[styles.groupChild, styles.groupPosition]} />
         <View style={[styles.groupInner, styles.groupPosition]} />
-        <Text style={[styles.height1, styles.heightTypo]}>Height</Text>
+        <Text style={[styles.height1, styles.heightTypo]}>1.69 inches</Text>
       </View>
       <View style={[styles.rectangleGroup, styles.groupParentPosition]}>
         <View style={[styles.rectangleView, styles.groupChild2Position]} />
         <View style={[styles.rectangleView, styles.groupChild2Position]} />
         <View style={[styles.groupChild2, styles.groupChild2Position]} />
-        <Text style={[styles.height2, styles.heightTypo]}>Weight (lbs)</Text>
+        <Text style={[styles.height2, styles.heightTypo]}>175 (lbs)</Text>
         <View style={styles.rectangleContainer}>
           <View style={[styles.groupChild, styles.groupPosition]} />
           <View style={[styles.groupChild, styles.groupPosition]} />
           <View style={[styles.groupInner, styles.groupPosition]} />
-          <Text style={[styles.height1, styles.heightTypo]}>Diet</Text>
+          <Text style={[styles.height1, styles.heightTypo]}>muscle loss</Text>
         </View>
       </View>
       <Text style={[styles.mealPlanData, styles.heightTypo1]}>
@@ -259,14 +259,14 @@ const UpdatingProfile = () => {
         <View style={[styles.groupChild, styles.groupPosition]} />
         <View style={[styles.groupInner, styles.groupPosition]} />
         <Text style={[styles.height1, styles.heightTypo]}>
-          Number of Swipes
+          225 meals swipe
         </Text>
       </View>
       <View style={[styles.rectangleParent1, styles.groupParentPosition]}>
         <View style={[styles.groupChild, styles.groupPosition]} />
         <View style={[styles.groupChild, styles.groupPosition]} />
         <View style={[styles.groupInner, styles.groupPosition]} />
-        <Text style={[styles.height1, styles.heightTypo]}>Number of Meals</Text>
+        <Text style={[styles.height1, styles.heightTypo]}>3 meals per day</Text>
       </View>
       <Image
         style={[styles.iconlylightprofile, styles.iconlylightprofileLayout]}

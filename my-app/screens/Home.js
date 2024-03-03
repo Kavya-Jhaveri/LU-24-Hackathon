@@ -1,35 +1,20 @@
 import * as React from "react";
 import { StyleSheet, View, Text } from "react-native";
+import { TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
 import { Color, Border, FontSize, FontFamily } from "../GlobalStyles";
 
 const Home = () => {
+  const navigation = useNavigation();
+  const handleViewNowPress = () => {
+    navigation.navigate('SearchNoResults');
+  };
+  
   return (
     <View style={styles.home}>
       <View style={[styles.appbartop, styles.timePosition]}>
-        <View style={styles.battery}>
-          <View style={styles.border} />
-          <Image
-            style={[styles.capIcon, styles.capIconLayout]}
-            contentFit="cover"
-            source={require("../assets/cap.png")}
-          />
-          <View style={[styles.capacity, styles.capacityBg]} />
-        </View>
-        <Image
-          style={styles.wifiIcon}
-          contentFit="cover"
-          source={require("../assets/wifi.png")}
-        />
-        <Image
-          style={styles.cellularConnectionIcon}
-          contentFit="cover"
-          source={require("../assets/cellular-connection.png")}
-        />
-        <View style={styles.timeStyle}>
-          <Text style={[styles.time, styles.bmiFlexBox]}>9:41</Text>
-        </View>
       </View>
       <Image
         style={[styles.iconlylightprofile, styles.capIconLayout]}
@@ -91,7 +76,9 @@ const Home = () => {
         <View style={styles.rectangleParent1}>
           <View style={[styles.groupChild4, styles.groupChildPosition]} />
           <View style={styles.viewNowParent}>
-            <Text style={[styles.viewNow, styles.viewNowTypo]}>View Now</Text>
+          <TouchableOpacity onPress={handleViewNowPress}>
+  <Text style={[styles.viewNow, styles.viewNowTypo]}>View Now</Text>
+</TouchableOpacity>
             <Image
               style={[styles.iconlyboldarrowRight2, styles.capIconLayout]}
               contentFit="cover"
@@ -100,7 +87,7 @@ const Home = () => {
           </View>
         </View>
       </View>
-      <Text style={[styles.bmi, styles.bmiLayout]}>BMI</Text>
+      <Text style={[styles.bmi, styles.bmiLayout]}>CUSTOMIZED BMI</Text>
       <View style={styles.modelight}>
         <View style={[styles.homeIndicator, styles.capacityBg]} />
       </View>
@@ -130,11 +117,7 @@ const Home = () => {
 };
 
 const styles = StyleSheet.create({
-  timePosition: {
-    left: "0%",
-    position: "absolute",
-    width: "100%",
-  },
+  
   capIconLayout: {
     maxHeight: "100%",
     maxWidth: "100%",
@@ -183,10 +166,7 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     position: "absolute",
   },
-  bmiLayout: {
-    height: 10,
-    position: "absolute",
-  },
+
   groupChildLayout: {
     height: 8,
     width: 12,
@@ -246,55 +226,9 @@ const styles = StyleSheet.create({
     opacity: 0.4,
     right: "0%",
   },
-  capacity: {
-    height: "64.6%",
-    width: "74.07%",
-    top: "17.7%",
-    right: "17.7%",
-    bottom: "17.7%",
-    left: "8.23%",
-    borderRadius: 1,
-  },
-  battery: {
-    height: "25.68%",
-    width: "6.48%",
-    top: "39.32%",
-    right: "3.84%",
-    bottom: "35%",
-    left: "89.68%",
-    position: "absolute",
-  },
-  wifiIcon: {
-    width: 15,
-    height: 11,
-  },
-  cellularConnectionIcon: {
-    width: 17,
-    height: 11,
-  },
-  time: {
-    marginTop: -2.5,
-    top: "50%",
-    fontSize: FontSize.sFSubheadlineSemibold_size,
-    fontFamily: FontFamily.sFSubheadlineSemibold,
-    color: Color.bordersBackgroundsBlack,
-    fontWeight: "600",
-    lineHeight: 20,
-    textAlign: "center",
-    letterSpacing: 0,
-    left: "0%",
-    position: "absolute",
-    width: "100%",
-  },
-  timeStyle: {
-    height: "47.73%",
-    width: "14.4%",
-    top: "15.91%",
-    right: "80%",
-    bottom: "36.36%",
-    left: "5.6%",
-    position: "absolute",
-  },
+
+
+
   appbartop: {
     height: "5.42%",
     top: "0.99%",
@@ -338,7 +272,7 @@ const styles = StyleSheet.create({
     fontSize: FontSize.size_3xs,
     height: "100%",
     left: "0%",
-    width: "100%",
+    width: "200%",
   },
   weeklyMealSuggestedForYouWrapper: {
     height: "8.28%",
@@ -447,7 +381,7 @@ const styles = StyleSheet.create({
     width: 150,
     left: 28,
     color: Color.bordersBackgroundsWhiteBackground,
-    fontWeight: "600",
+    fontWeight: "400",
     position: "absolute",
     textAlign: "left",
   },
@@ -491,14 +425,12 @@ const styles = StyleSheet.create({
     left: 28,
   },
   bmi: {
-    top: 483,
+    top: 449,
     left: 92,
     fontSize: FontSize.size_3xl,
     width: 192,
     fontFamily: FontFamily.signika,
     textAlign: "center",
-    letterSpacing: 0,
-    color: Color.bordersBackgroundsBlack,
     lineHeight: 20,
   },
   homeIndicator: {
