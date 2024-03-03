@@ -1,7 +1,8 @@
 import * as React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Pressable, Text, TouchableOpacity } from "react-native";
 import { Image } from "expo-image";
-import { Color, FontSize, Border, FontFamily } from "../GlobalStyles";
+import { useNavigation } from "@react-navigation/native";
+import { Color, FontFamily, Border, FontSize } from "../GlobalStyles";
 
 const Onboarding2 = () => {
   return (
@@ -35,7 +36,16 @@ const Onboarding2 = () => {
           </View>
         </View>
         <View style={[styles.getStartedWrapper, styles.frameFlexBox]}>
-          <Text style={styles.getStarted}>Get Started</Text>
+
+        <TouchableOpacity
+    style={styles.getStartedFlexBox}
+    onPress={() => {
+      this.props.navigation.navigate('CreateAccount')
+    }}
+  >
+    <Text style={styles.getStarted}>Get Started</Text>
+  </TouchableOpacity>
+          
         </View>
       </View>
       <View style={[styles.frame1, styles.frame1Layout]}>

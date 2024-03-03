@@ -218,6 +218,8 @@ const CreateAccount = () => {
           </View>
         </View>
       </View>
+
+      
       <Text style={[styles.createAccount1, styles.createTypo]}>
         Create Account
       </Text>
