@@ -6,6 +6,7 @@ import Details from './app/screens/Details';
 import { useState, useEffect } from 'react';
 import { FIREBASE_AUTH } from './FirebaseConfig';
 import { User, onAuthStateChanged } from 'firebase/auth';
+import FetchData from './src/filter';
 
 
 const Stack = createNativeStackNavigator();
@@ -14,7 +15,7 @@ const InsideStack = createNativeStackNavigator();
 function InsideLayout(){
   return(
     <InsideStack.Navigator>
-      <InsideStack.Screen name = "random1" component = {List} />
+      <InsideStack.Screen name = "random1" component = {FetchData} />
       <InsideStack.Screen name = "random2" component = {Details} />
     </InsideStack.Navigator>
   );

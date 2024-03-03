@@ -3,6 +3,9 @@ import { initializeApp } from "firebase/app";
 
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+import firebase from 'firebase/compat/app'
+import {getDatabase} from 'firebase/database'
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -11,6 +14,7 @@ import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyAhEW0i38BgZmCZpcv8oEObwyoTFEH0t5U",
   authDomain: "lu-24-hackathon-mx.firebaseapp.com",
+  databaseURL: "https://lu-24-hackathon-mx-default-rtdb.firebaseio.com/",
   projectId: "lu-24-hackathon-mx",
   storageBucket: "lu-24-hackathon-mx.appspot.com",
   messagingSenderId: "613467701599",
@@ -22,3 +26,5 @@ const firebaseConfig = {
 export const FIREBASE_APP= initializeApp(firebaseConfig);
 export const FIREBASE_AUTH = getAuth(FIREBASE_APP);
 export const FIRESTORE_DB = getFirestore(FIREBASE_APP);
+const db = getDatabase(FIREBASE_APP);
+export {db};

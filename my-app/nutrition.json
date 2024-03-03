@@ -1,0 +1,309 @@
+{"foods": [
+    {
+        "name": "Yellow American Cheese",
+        "calories": 95,
+        "protein": 5,
+        "allergies": ["Milk", "Soybean"],
+        "total_sugars": 0,
+        "carbohydrates": 1,
+        "fiber": 0
+    },
+    {
+        "name": "Swiss Cheese",
+        "calories": 111,
+        "protein": 8,
+        "allergies": ["Milk"],
+        "total_sugars": 0,
+        "carbohydrates": 0,
+        "fiber": 0
+    },
+    {
+        "name": "Hamburger On Bun",
+        "calories": 400,
+        "protein": 19,
+        "allergies": ["Wheat", "Soybean", "Sesame Seeds", "Gluten"],
+        "total_sugars": 4,
+        "carbohydrates": 28,
+        "fiber": 1
+    },
+    {
+        "name": "Mild Cheddar Cheese",
+        "calories": 115,
+        "protein": 6,
+        "allergies": ["Milk"],
+        "total_sugars": 0,
+        "carbohydrates": 0,
+        "fiber": 0
+    },
+    {
+        "name": "Sliced Red Onions",
+        "calories": 11,
+        "protein": 0,
+        "allergies": [],
+        "total_sugars": 1,
+        "carbohydrates": 3,
+        "fiber": 0
+    },
+    {
+        "name": "Grilled Chicken Breast",
+        "calories": 141,
+        "protein": 26,
+        "allergies": [],
+        "total_sugars": 0,
+        "carbohydrates": 0,
+        "fiber": 0
+    },
+    {
+        "name": "Cheeseburger On Bun",
+        "calories": 450,
+        "protein": 21,
+        "allergies": ["Milk", "Wheat", "Soybean", "Sesame Seeds", "Gluten"],
+        "total_sugars": 5,
+        "carbohydrates": 29,
+        "fiber": 1
+    },
+    {
+        "name": "Grilled Cheese Sandwich",
+        "calories": 261,
+        "protein": 10,
+        "allergies": ["Milk", "Wheat", "Soybean", "Gluten"],
+        "total_sugars": 2,
+        "carbohydrates": 23,
+        "fiber": 2
+    },
+    {
+        "name": "French Fries",
+        "calories": 244,
+        "protein": 2,
+        "allergies": ["Soybean"],
+        "total_sugars": 1,
+        "carbohydrates": 25,
+        "fiber": 2
+    },
+    {
+        "name": "Turkey Burger",
+        "calories": 300,
+        "protein": 25,
+        "allergies": ["Wheat", "Soybean", "Gluten"],
+        "total_sugars": 8,
+        "carbohydrates": 30,
+        "fiber": 5
+    },
+    {
+        "name": "Black Bean Burger",
+        "calories": 308,
+        "protein": 18,
+        "allergies": ["Milk", "Eggs", "Wheat", "Soybean", "Sesame Seeds", "Gluten"],
+        "total_sugars": 6,
+        "carbohydrates": 45,
+        "fiber": 6
+    },
+    {
+        "name": "Balsamic Grilled Vegetables",
+        "calories": 53,
+        "protein": 0,
+        "allergies": [],
+        "total_sugars": 2,
+        "carbohydrates": 2,
+        "fiber": 0
+    },
+    {
+        "name": "Baked Ziti",
+        "calories": 317,
+        "protein": 14,
+        "allergies": ["Milk", "Wheat", "Soybean", "Sesame Seeds", "Gluten"],
+        "total_sugars": 5,
+        "carbohydrates": 31,
+        "fiber": 2
+    },
+    {
+        "name": "Sweet Potato French Fries",
+        "calories": 268,
+        "protein": 2,
+        "allergies": ["Soybean"],
+        "total_sugars": 9,
+        "carbohydrates": 28,
+        "fiber": 2
+    },
+    {
+        "name": "Baked Ziti With Italian Sausage",
+        "calories": 641,
+        "protein": 36,
+        "allergies": [],
+        "total_sugars": 8,
+        "carbohydrates": 49,
+        "fiber": 3
+    },
+    {
+        "name": "Chicken Tenders",
+        "calories": 419,
+        "protein": 16,
+        "allergies": ["Wheat", "Soybean", "Gluten"],
+        "total_sugars": 0,
+        "carbohydrates": 18,
+        "fiber": 0
+    },
+    {
+        "name": "Scrambled Eggs",
+        "calories": 191,
+        "protein": 14,
+        "allergies": ["Milk", "Eggs", "Soybean"],
+        "total_sugars": 1,
+        "carbohydrates": 1,
+        "fiber": 0
+    },
+    {
+        "name": "One Cage Free Fried Egg",
+        "calories": 108,
+        "protein": 7,
+        "allergies": ["Milk", "Eggs", "Soybean"],
+        "total_sugars": 0,
+        "carbohydrates": 0,
+        "fiber": 0
+    },
+    {
+        "name": "Cavatappi Pasta",
+        "calories": 197,
+        "protein": 6,
+        "allergies": ["Wheat", "Gluten"],
+        "total_sugars": 1,
+        "carbohydrates": 38,
+        "fiber": 2
+    },
+    {
+        "name": "Alfredo Cheese Sauce",
+        "calories": 98,
+        "protein": 2,
+        "allergies": ["Milk", "Wheat", "Soybean", "Gluten"],
+        "total_sugars": 1,
+        "carbohydrates": 4,
+        "fiber": 0
+    },
+    {
+        "name": "Penne Pasta",
+        "calories": 197,
+        "protein": 6,
+        "allergies": ["Wheat", "Gluten"],
+        "total_sugars": 1,
+        "carbohydrates": 38,
+        "fiber": 2
+    },
+    {
+        "name": "Tomato Basil Marinara",
+        "calories": 18,
+        "protein": 0,
+        "allergies": [],
+        "total_sugars": 2,
+        "carbohydrates": 3,
+        "fiber": 0
+    },
+    {
+        "name": "Cheese Pizza",
+        "calories": 248,
+        "protein": 11,
+        "allergies": ["Milk", "Wheat", "Soybean", "Gluten"],
+        "total_sugars": 3,
+        "carbohydrates": 34,
+        "fiber": 2
+    },
+    {
+        "name": "Pepperoni Pizza",
+        "calories": 277,
+        "protein": 13,
+        "allergies": ["Milk", "Wheat", "Soybean", "Gluten"],
+        "total_sugars": 3,
+        "carbohydrates": 34,
+        "fiber": 2
+    },
+    {
+        "name": "Green Beans & Stewed Tomatoes",
+        "calories": 43,
+        "protein": 1,
+        "allergies": [],
+        "total_sugars": 3,
+        "carbohydrates": 7,
+        "fiber": 2
+    },
+    {
+        "name": "Tilapia Provencal",
+        "calories": 137,
+        "protein": 24,
+        "allergies": ["Fish"],
+        "total_sugars": 2,
+        "carbohydrates": 3,
+        "fiber": 0
+    },
+    {
+        "name": "Oven Roasted Potato Wedges",
+        "calories": 85,
+        "protein": 2,
+        "allergies": [],
+        "total_sugars": 1,
+        "carbohydrates": 18,
+        "fiber": 2
+    },
+    {
+        "name": "Cream Of Broccoli Soup",
+        "calories": 143,
+        "protein": 2,
+        "allergies": ["Milk", "Wheat", "Soybean", "Gluten"],
+        "total_sugars": 2,
+        "carbohydrates": 13,
+        "fiber": 0
+    },
+    {
+        "name": "Cream Of Broccoli Soup",
+        "calories": 143,
+        "protein": 2,
+        "allergies": ["Milk", "Wheat", "Soybean", "Gluten"],
+        "total_sugars": 2,
+        "carbohydrates": 13,
+        "fiber": 0
+    },
+    {
+        "name": "Turkey & Rice Soup",
+        "calories": 102,
+        "protein": 5,
+        "allergies": [],
+        "total_sugars": 2,
+        "carbohydrates": 13,
+        "fiber": 0
+    },
+    {
+        "name": "Roasted Curry Tofu",
+        "calories": 69,
+        "protein": 5,
+        "allergies": ["Treenuts", "Soybean"],
+        "total_sugars": 1,
+        "carbohydrates": 3,
+        "fiber": 0
+    },
+    {
+        "name": "Eggplant Ragout With Garbanzo Beans",
+        "calories": 116,
+        "protein": 4,
+        "allergies": [],
+        "total_sugars": 5,
+        "carbohydrates": 17,
+        "fiber": 4
+    },
+    {
+        "name": "Chickpea Chaat Salad",
+        "calories": 59,
+        "protein": 3,
+        "allergies": [],
+        "total_sugars": 3,
+        "carbohydrates": 11,
+        "fiber": 2
+    },
+    {
+        "name": "Yellow Rice With Turmeric",
+        "calories": 183,
+        "protein": 3,
+        "allergies": [],
+        "total_sugars": 1,
+        "carbohydrates": 31,
+        "fiber": 0
+    }
+]
+}
