@@ -10,7 +10,6 @@
 
 <<<<<<< HEAD
 Lehigh '24 Lehigh Hacks for Health
-THIS IS A TEST
 =======
 Note: Make sure you have installed native code dependencies [here](https://reactnative.dev/docs/environment-setup#installing-dependencies)
 
