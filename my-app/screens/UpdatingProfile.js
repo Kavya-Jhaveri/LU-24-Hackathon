@@ -15,28 +15,7 @@ const UpdatingProfile = () => {
       <View style={styles.statusBar}>
         <View style={[styles.statusBarChild, styles.statusPosition]} />
         <View style={[styles.barsStatusBarIphoneL, styles.statusPosition]}>
-          <View style={styles.battery}>
-            <View style={[styles.border, styles.statusPosition]} />
-            <Image
-              style={[styles.capIcon, styles.iconLayout]}
-              contentFit="cover"
-              source={require("../assets/cap.png")}
-            />
-            <View style={[styles.capacity, styles.capacityBg]} />
-          </View>
-          <Image
-            style={styles.wifiIcon}
-            contentFit="cover"
-            source={require("../assets/wifi.png")}
-          />
-          <Image
-            style={styles.cellularConnectionIcon}
-            contentFit="cover"
-            source={require("../assets/cellular-connection.png")}
-          />
-          <View style={styles.timeStyle}>
-            <Text style={[styles.time, styles.timeTypo]}>9:41</Text>
-          </View>
+
         </View>
         <Text style={[styles.dailyPractice, styles.timeTypo]}>Search</Text>
         <Pressable
@@ -234,7 +213,7 @@ const UpdatingProfile = () => {
         <View style={[styles.groupChild, styles.groupPosition]} />
         <View style={[styles.groupChild, styles.groupPosition]} />
         <View style={[styles.groupInner, styles.groupPosition]} />
-        <Text style={[styles.height1, styles.heightTypo]}>1.69 inches</Text>
+        <Text style={[styles.height1, styles.heightTypo]}>69 inches</Text>
       </View>
       <View style={[styles.rectangleGroup, styles.groupParentPosition]}>
         <View style={[styles.rectangleView, styles.groupChild2Position]} />
@@ -245,7 +224,7 @@ const UpdatingProfile = () => {
           <View style={[styles.groupChild, styles.groupPosition]} />
           <View style={[styles.groupChild, styles.groupPosition]} />
           <View style={[styles.groupInner, styles.groupPosition]} />
-          <Text style={[styles.height1, styles.heightTypo]}>muscle loss</Text>
+          <Text style={[styles.height1, styles.heightTypo]}>muscle gain</Text>
         </View>
       </View>
       <Text style={[styles.mealPlanData, styles.heightTypo1]}>
@@ -268,16 +247,19 @@ const UpdatingProfile = () => {
         <View style={[styles.groupInner, styles.groupPosition]} />
         <Text style={[styles.height1, styles.heightTypo]}>3 meals per day</Text>
       </View>
+      
       <Image
         style={[styles.iconlylightprofile, styles.iconlylightprofileLayout]}
         contentFit="cover"
         source={require("../assets/iconlylightprofile.png")}
       />
+
       <Image
         style={[styles.iconlyboldhome, styles.iconLayout]}
         contentFit="cover"
         source={require("../assets/iconlyboldhome.png")}
       />
+
       <Image
         style={styles.iconlyboldscan}
         contentFit="cover"

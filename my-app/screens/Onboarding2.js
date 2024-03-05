@@ -12,28 +12,8 @@ const Onboarding2 = () => {
       </View>
       <View style={[styles.frame, styles.frameFlexBox]}>
         <View style={styles.appbartop}>
-          <View style={styles.battery}>
-            <View style={styles.border} />
-            <Image
-              style={[styles.capIcon, styles.framePosition]}
-              contentFit="cover"
-              source={require("../assets/cap.png")}
-            />
-            <View style={[styles.capacity, styles.capacityBg]} />
-          </View>
-          <Image
-            style={styles.wifiIcon}
-            contentFit="cover"
-            source={require("../assets/wifi.png")}
-          />
-          <Image
-            style={styles.cellularConnectionIcon}
-            contentFit="cover"
-            source={require("../assets/cellular-connection.png")}
-          />
-          <View style={styles.timeStyle}>
-            <Text style={[styles.time, styles.timeFlexBox]}>9:41</Text>
-          </View>
+          
+
         </View>
         <View style={[styles.getStartedWrapper, styles.frameFlexBox]}>
 
@@ -219,7 +199,6 @@ const styles = StyleSheet.create({
     letterSpacing: 1.3,
     color: Color.bordersBackgroundsWhiteBackground,
     textAlign: "left",
-    fontFamily: FontFamily.signika,
     fontSize: FontSize.size_6xl,
     fontWeight: "600",
   },
@@ -249,7 +228,6 @@ const styles = StyleSheet.create({
     lineHeight: 24,
     color: Color.colorGray_500,
     width: 272,
-    fontFamily: FontFamily.signika,
     textAlign: "center",
     letterSpacing: 0,
   },
@@ -260,10 +238,8 @@ const styles = StyleSheet.create({
     color: Color.colorDarkseagreen,
   },
   alreadyHaveAnAcount: {
-    fontFamily: FontFamily.signika,
   },
   logIn1: {
-    fontFamily: FontFamily.signika,
     fontWeight: "600",
   },
   alreadyHaveAnContainer: {
@@ -276,7 +252,6 @@ const styles = StyleSheet.create({
     left: 48,
     lineHeight: 35,
     color: Color.colorGray_400,
-    fontFamily: FontFamily.signika,
     fontSize: FontSize.size_6xl,
     fontWeight: "600",
     letterSpacing: 0,
@@ -310,7 +285,6 @@ const styles = StyleSheet.create({
   uninutrion: {
     left: 66,
     fontWeight: "800",
-    fontFamily: FontFamily.nunito,
     color: Color.colorBeige_100,
     width: 147,
     height: 21,

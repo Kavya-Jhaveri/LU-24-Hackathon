@@ -16,16 +16,25 @@ const Home = () => {
     <View style={styles.home}>
       <View style={[styles.appbartop, styles.timePosition]}>
       </View>
+
+      <TouchableOpacity
+      style={styles.container}
+      onPress={() => navigation.navigate('UpdatingProfile')}>
       <Image
-        style={[styles.iconlylightprofile, styles.capIconLayout]}
-        contentFit="cover"
-        source={require("../assets/iconlylightprofile.png")}
+        source={require('../assets/iconlylightprofile.png')} // Replace with your image path
+        style={styles.image}
       />
+    </TouchableOpacity>
+
+    <TouchableOpacity
+      onPress={() => navigation.navigate('Home')}>
       <Image
         style={[styles.iconlyboldhome, styles.capIconLayout]}
-        contentFit="cover"
         source={require("../assets/iconlyboldhome.png")}
       />
+    </TouchableOpacity>
+      
+      
       <View style={[styles.rectangleParent, styles.rectangleParentPosition]}>
         <LinearGradient
           style={[styles.groupChild, styles.groupChildPosition1]}
@@ -40,15 +49,54 @@ const Home = () => {
         <View style={styles.weeklyMealSuggestedForYouWrapper}>
           <Text
             style={[styles.weeklyMealSuggested, styles.numberTypo]}
-          >{`Weekly Meal Suggested for you `}</Text>
+          >{`Daily Meal Suggested for you `}</Text>
         </View>
         <View style={[styles.rectangleGroup, styles.rectanglePosition]}>
           <View style={styles.groupInner} />
           <View style={styles.todayMealWrapper}>
             <Text
               style={[styles.todayMeal, styles.mealClr]}
-            >{`Today meal: `}</Text>
+            >{`Lunch meal: Grilled`}</Text>
+            
           </View>
+          <View style={styles.todayMealWrapper2}>
+            <Text
+              style={[styles.todayMeal, styles.mealClr]}
+            >{`Chicken Breast, Potato`}</Text>
+            
+          </View>
+
+          <View style={styles.todayMealWrapper3}>
+            <Text
+              style={[styles.todayMeal, styles.mealClr]}
+            >{``}</Text>
+            
+          </View>
+          <View style={styles.todayMealWrapper4}>
+            <Text
+              style={[styles.todayMeal, styles.mealClr]}
+            >{`Wedges,Chickpea Salad`}</Text>
+            
+          </View>
+          <View style={styles.todayMealWrapper5}>
+            <Text
+              style={[styles.todayMeal, styles.mealClr]}
+            >{`Dinner: Turkey Burger,`}</Text>
+            
+          </View>
+          <View style={styles.todayMealWrapper6}>
+            <Text
+              style={[styles.todayMeal, styles.mealClr]}
+            >{`Eggplant Ragout withGarbanzo Bean`}</Text>
+            
+          </View>
+          <View style={styles.todayMealWrapper7}>
+            <Text
+              style={[styles.todayMeal, styles.mealClr]}
+            >{`Total Calories: 1480`}</Text>
+            
+          </View>
+          
         </View>
       </View>
       <View style={[styles.rectangleContainer, styles.bmiLayout]}>
@@ -71,7 +119,7 @@ const Home = () => {
           source={require("../assets/subtract.png")}
         />
         <Text style={[styles.weeklyMealSuggested1, styles.findTrackAndTypo]}>
-          Weekly Meal suggested for you
+          Daily Meal suggested for you
         </Text>
         <View style={styles.rectangleParent1}>
           <View style={[styles.groupChild4, styles.groupChildPosition]} />
@@ -87,7 +135,7 @@ const Home = () => {
           </View>
         </View>
       </View>
-      <Text style={[styles.bmi, styles.bmiLayout]}>CUSTOMIZED BMI</Text>
+      {/* <Text style={[styles.bmi, styles.bmiLayout]}>CUSTOMIZED BMI</Text> */}
       <View style={styles.modelight}>
         <View style={[styles.homeIndicator, styles.capacityBg]} />
       </View>
@@ -110,8 +158,12 @@ const Home = () => {
         <View style={[styles.rectangleWrapper, styles.rectanglePosition]}>
           <View style={[styles.groupChild5, styles.groupChildPosition]} />
         </View>
-      </View>
-      <Text style={[styles.number, styles.numberTypo]}>NUMBER</Text>
+        </View>
+      <Text style={[styles.number, styles.numberTypo]}>BMR Calculation:</Text>
+      <Text style={[styles.number2, styles.numberTypo]}>Height: 5'9 (69 inches)</Text>
+      <Text style={[styles.number3, styles.numberTypo]}>Weight: 175</Text>
+      <Text style={[styles.number4, styles.numberTypo]}>BMR Calculation: 1800 (kcal/day)</Text>
+      <Text style={[styles.number5, styles.numberTypo]}>1800 (kcal/day)</Text>
     </View>
   );
 };
@@ -123,6 +175,14 @@ const styles = StyleSheet.create({
     maxWidth: "100%",
     position: "absolute",
     overflow: "hidden",
+  },
+  image: {
+    width: 705, // Adjust width as needed
+    height: 100, // Adjust height as needed
+    right: "-85.47%",
+    top: "700%",
+    width: "5.35%",
+    resizeMode: 'contain', // Adjust resizeMode as needed
   },
   capacityBg: {
     backgroundColor: Color.bordersBackgroundsBlack,
@@ -146,6 +206,7 @@ const styles = StyleSheet.create({
     left: "0%",
     position: "absolute",
   },
+
   numberTypo: {
     lineHeight: 14,
     fontSize: FontSize.size_3xs,
@@ -304,12 +365,66 @@ const styles = StyleSheet.create({
     left: "0%",
     height: "100%",
     color: Color.bordersBackgroundsWhiteBackground,
-    width: "100%",
+    width: "200%",
   },
   todayMealWrapper: {
     height: "19.26%",
     width: "40.68%",
     top: "8.67%",
+    right: "55.88%",
+    bottom: "72.08%",
+    left: "3.44%",
+    position: "absolute",
+  },
+  todayMealWrapper2: {
+    height: "19.26%",
+    width: "40.68%",
+    top: "18.67%",
+    right: "55.88%",
+    bottom: "72.08%",
+    left: "3.44%",
+    position: "absolute",
+  },
+  todayMealWrapper3: {
+    height: "19.26%",
+    width: "40.68%",
+    top: "28.67%",
+    right: "55.88%",
+    bottom: "72.08%",
+    left: "3.44%",
+    position: "absolute",
+  },
+  todayMealWrapper4: {
+    height: "19.26%",
+    width: "40.68%",
+    top: "38.67%",
+    right: "55.88%",
+    bottom: "72.08%",
+    left: "3.44%",
+    position: "absolute",
+  },
+  todayMealWrapper5: {
+    height: "19.26%",
+    width: "40.68%",
+    top: "48.67%",
+    right: "55.88%",
+    bottom: "72.08%",
+    left: "3.44%",
+    position: "absolute",
+  },
+  todayMealWrapper6: {
+    height: "19.26%",
+    width: "40.68%",
+    top: "58.67%",
+    right: "55.88%",
+    bottom: "72.08%",
+    left: "3.44%",
+    position: "absolute",
+  },
+  todayMealWrapper7: {
+    height: "19.26%",
+    width: "40.68%",
+    top: "68.67%",
     right: "55.88%",
     bottom: "72.08%",
     left: "3.44%",
@@ -499,7 +614,43 @@ const styles = StyleSheet.create({
   number: {
     top: 578,
     left: 59,
-    width: 57,
+    width:1000,
+    height: 20,
+    textAlign: "left",
+    fontFamily: FontFamily.signika,
+    color: Color.bordersBackgroundsBlack,
+  },
+  number2: {
+    top: 598,
+    left: 59,
+    width:1000,
+    height: 20,
+    textAlign: "left",
+    fontFamily: FontFamily.signika,
+    color: Color.bordersBackgroundsBlack,
+  },
+  number3: {
+    top: 618,
+    left: 59,
+    width:1000,
+    height: 20,
+    textAlign: "left",
+    fontFamily: FontFamily.signika,
+    color: Color.bordersBackgroundsBlack,
+  },
+  number4: {
+    top: 638,
+    left: 59,
+    width:1000,
+    height: 20,
+    textAlign: "left",
+    fontFamily: FontFamily.signika,
+    color: Color.bordersBackgroundsBlack,
+  },
+  number5: {
+    top: 658,
+    left: 59,
+    width:1000,
     height: 20,
     textAlign: "left",
     fontFamily: FontFamily.signika,

@@ -2,8 +2,16 @@ import * as React from "react";
 import { StyleSheet, View, Text } from "react-native";
 import { Image } from "expo-image";
 import { Color, FontFamily, Border, FontSize } from "../GlobalStyles";
+import { TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+
+
 
 const Profile = () => {
+  const navigation = useNavigation();
+  const handleViewNowPress = () => {
+    navigation.navigate('SearchNoResults');
+  };
   return (
     <View style={styles.profile}>
       <View style={styles.modelight}>
@@ -12,28 +20,8 @@ const Profile = () => {
       <View style={[styles.statusBar, styles.statusPosition]}>
         <View style={styles.statusBarChild} />
         <View style={[styles.barsStatusBarIphoneL, styles.statusPosition]}>
-          <View style={styles.battery}>
-            <View style={styles.border} />
-            <Image
-              style={[styles.capIcon, styles.iconLayout1]}
-              contentFit="cover"
-              source={require("../assets/cap.png")}
-            />
-            <View style={[styles.capacity, styles.capacityBg]} />
-          </View>
-          <Image
-            style={styles.wifiIcon}
-            contentFit="cover"
-            source={require("../assets/wifi.png")}
-          />
-          <Image
-            style={styles.cellularConnectionIcon}
-            contentFit="cover"
-            source={require("../assets/cellular-connection.png")}
-          />
-          <View style={styles.timeStyle}>
-            <Text style={[styles.time, styles.timeTypo]}>9:41</Text>
-          </View>
+          
+
         </View>
         <Text style={[styles.dailyPractice, styles.timeTypo]}>Profile</Text>
         <Image
@@ -48,28 +36,8 @@ const Profile = () => {
         />
       </View>
       <View style={styles.barsStatusBarIphoneL1}>
-        <View style={styles.battery}>
-          <View style={styles.border} />
-          <Image
-            style={[styles.capIcon, styles.iconLayout1]}
-            contentFit="cover"
-            source={require("../assets/cap.png")}
-          />
-          <View style={[styles.capacity, styles.capacityBg]} />
-        </View>
-        <Image
-          style={styles.wifiIcon}
-          contentFit="cover"
-          source={require("../assets/wifi.png")}
-        />
-        <Image
-          style={styles.cellularConnectionIcon}
-          contentFit="cover"
-          source={require("../assets/cellular-connection.png")}
-        />
-        <View style={styles.timeStyle}>
-          <Text style={[styles.time, styles.timeTypo]}>9:41</Text>
-        </View>
+
+
       </View>
       <Image
         style={styles.profileChild}
@@ -86,7 +54,7 @@ const Profile = () => {
         contentFit="cover"
         source={require("../assets/group3.png")}
       />
-      <Text style={styles.editName}>Edit Name</Text>
+      <Text style={styles.editName}>Sullivan</Text>
       <View style={[styles.profileInner, styles.profileChildLayout]} />
       <View style={[styles.rectangleView, styles.profileChildLayout]} />
       <View style={[styles.profileChild1, styles.profileChildLayout]} />
@@ -143,11 +111,19 @@ const Profile = () => {
         contentFit="cover"
         source={require("../assets/iconlylightprofile.png")}
       />
-      <Image
+      <TouchableOpacity
+      onPress={() => navigation.navigate('Home')}>
+      {/* <Image
+        source={require("../assets/iconlyboldhome.png")}
+        contentFit="cover"
+        style={[styles.iconlyboldhome, styles.iconLayout1]}
+      /> */}
+    </TouchableOpacity>
+      {/* <Image
         style={[styles.iconlyboldhome, styles.iconLayout1]}
         contentFit="cover"
         source={require("../assets/iconlyboldhome.png")}
-      />
+      /> */}
       <Image
         style={styles.iconlyboldscan}
         contentFit="cover"
@@ -158,6 +134,14 @@ const Profile = () => {
         contentFit="cover"
         source={require("../assets/iconlylightprofile.png")}
       />
+      <TouchableOpacity
+      onPress={() => navigation.navigate('Home')}>
+      <Image
+        style={[styles.iconlyboldhome, styles.iconLayout1]}
+        contentFit="cover"
+        source={require("../assets/iconlyboldhome.png")}
+      />
+    </TouchableOpacity>
       <Image
         style={[styles.iconlyboldhome, styles.iconLayout1]}
         contentFit="cover"
@@ -423,22 +407,22 @@ const styles = StyleSheet.create({
     top: 376,
   },
   iconlyboldprofile: {
-    top: "47.54%",
+    top: "45.54%",
     bottom: "49.01%",
   },
   profileChild2: {
     top: 440,
   },
   iconlyboldsetting: {
-    top: "55.42%",
+    top: "52.42%",
     bottom: "41.13%",
   },
   iconlyboldpaper: {
-    top: "65.27%",
+    top: "62.27%",
     bottom: "31.28%",
   },
   iconlyboldlogout: {
-    top: "73.15%",
+    top: "70.15%",
     bottom: "23.4%",
   },
   editProfile: {

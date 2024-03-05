@@ -257,6 +257,7 @@ const CreateAccount = () => {
       <TextInput style={[styles.height, styles.heightTypo1, {marginTop: 170}]} placeholder="Weight (lbs)"/>
       <TextInput style={[styles.height, styles.heightTypo1, {marginTop: 289}]} placeholder="Diet"/>
 
+
       
 
 
@@ -279,15 +280,18 @@ const CreateAccount = () => {
         <View style={[styles.groupInner, styles.groupPosition]} />
       </View>
       <TextInput style={[styles.height, styles.heightTypo1, {marginTop: 525}]} placeholder="Number of Meals"/>
-      <View style={styles.createAccountChild} />
 
-      <TouchableOpacity style={styles.container} onPress={() => { 
+      {/* <View style={styles.createAccountChild} /> */}
+      {/* <TouchableOpacity style={styles.container} onPress={() => { 
         navigation.navigate('Home')}}>
         <Text style={[styles.createAccount1, styles.createTypo]}>
           Create Account
         </Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
 
+  <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Home')}>
+        <Text style={styles.buttonText}>Create Account</Text>
+      </TouchableOpacity>
 
 
     </View>
@@ -297,11 +301,40 @@ const CreateAccount = () => {
 const styles = StyleSheet.create({
 
   container: {
-    flex: 1,
-    justifyContent: 'flex-end',
-    marginBottom: -8550,
-    // other styles as needed
+    flexGrow: 1,
+    backgroundColor: Color.bordersBackgroundsWhiteBackground,
   },
+  content: {
+    paddingHorizontal: 20,
+    paddingBottom: 100, // Adjust according to your content height
+  },
+  input: {
+    marginVertical: 10,
+    padding: 10,
+    borderWidth: 1,
+    borderColor: 'gray',
+    borderRadius: 5,
+  },
+  button: {
+    position: 'absolute',
+    bottom: 20,
+    left: 20,
+    right: 20,
+    backgroundColor: 'green',
+    borderRadius: 10,
+    paddingVertical: 15,
+  },
+  buttonText: {
+    textAlign: 'center',
+    color: 'white',
+    fontSize: 16,
+  },
+  // container: {
+  //   //flex: 1,
+  //   justifyContent: 'flex-end',
+  //   marginBottom: -8550,
+  //   // other styles as needed
+  // },
 
   modelightPosition: {
     display: "none",
@@ -423,8 +456,9 @@ const styles = StyleSheet.create({
   },
   createTypo: {
     textAlign: "left",
-    fontFamily: FontFamily.signika,
+    //fontFamily: FontFamily.signika,
     letterSpacing: 0.8,
+    width: "100%",
     fontSize: FontSize.sFSubheadlineSemibold_size,
     position: "absolute",
   },
@@ -432,12 +466,12 @@ const styles = StyleSheet.create({
     left: "10.93%",
     textAlign: "left",
     color: Color.colorGray_300,
-    fontFamily: FontFamily.signika,
+    //fontFamily: FontFamily.signika,
     letterSpacing: 0.8,
     height: "2.96%",
     fontSize: FontSize.sFSubheadlineSemibold_size,
     position: "absolute",
-    width: "65.2%",
+    width: "85.2%",
   },
   groupParentPosition: {
     left: "4.53%",
@@ -457,7 +491,7 @@ const styles = StyleSheet.create({
     color: Color.colorDimgray_200,
     left: "14.68%",
     textAlign: "left",
-    fontFamily: FontFamily.signika,
+    //fontFamily: FontFamily.signika,
     fontSize: FontSize.size_base,
     lineHeight: 20,
     letterSpacing: 0,
@@ -858,7 +892,7 @@ const styles = StyleSheet.create({
     color: Color.colorGray_300,
     height: "2.96%",
     textAlign: "left",
-    fontFamily: FontFamily.signika,
+    //fontFamily: FontFamily.signika,
     letterSpacing: 0.8,
     width: "65.2%",
   },
@@ -869,7 +903,7 @@ const styles = StyleSheet.create({
     color: Color.colorGray_300,
     height: "2.96%",
     textAlign: "left",
-    fontFamily: FontFamily.signika,
+    //fontFamily: FontFamily.signika,
     letterSpacing: 0.8,
   },
   height: {
@@ -938,7 +972,7 @@ const styles = StyleSheet.create({
     color: Color.colorGray_300,
     height: "2.96%",
     textAlign: "left",
-    fontFamily: FontFamily.signika,
+    //fontFamily: FontFamily.signika,
     letterSpacing: 0.8,
   },
   groupView: {
@@ -955,23 +989,23 @@ const styles = StyleSheet.create({
     right: "8.27%",
     width: "87.2%",
   },
-  createAccountChild: {
-    height: "6.53%",
-    width: "60%",
-    top: "88.92%",
-    right: "18.93%",
-    bottom: "4.56%",
-    left: "21.07%",
-    backgroundColor: Color.colorDarkseagreen,
-    position: "absolute",
-  },
+  // createAccountChild: {
+  //   height: "6.53%",
+  //   width: "60%",
+  //   top: "88.92%",
+  //   right: "18.93%",
+  //   bottom: "4.56%",
+  //   left: "21.07%",
+  //   backgroundColor: Color.colorDarkseagreen,
+  //   position: "absolute",
+  // },
   createAccount2: {
     height: "1.97%",
     width: "43.47%",
     top: "91.26%",
     left: "36.27%",
     textAlign: "left",
-    fontFamily: FontFamily.signika,
+    //fontFamily: FontFamily.signika,
     letterSpacing: 0.8,
     color: Color.bordersBackgroundsBlack,
   },
