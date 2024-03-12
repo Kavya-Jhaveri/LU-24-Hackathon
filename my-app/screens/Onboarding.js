@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Text, StyleSheet, View, Pressable } from "react-native";
+import { StyleSheet, View, Pressable, Text, TouchableOpacity } from "react-native";
 import { Image } from "expo-image";
 import { useNavigation } from "@react-navigation/native";
 import { Color, FontFamily, Border, FontSize } from "../GlobalStyles";
@@ -70,7 +70,18 @@ const Onboarding = () => {
           style={styles.rectanglePressable}
           onPress={() => navigation.navigate("CreateAccount")}
         />
-        <Text style={styles.getStarted}>Get Started</Text>
+
+<TouchableOpacity
+    style={styles.getStartedFlexBox}
+    onPress={() => {
+      navigation.navigate('CreateAccount')
+    }}
+  >
+    <Text style={styles.getStarted}>Get Started</Text>
+  </TouchableOpacity>
+        
+      
+      
       </View>
     </Pressable>
   );

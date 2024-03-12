@@ -1,5 +1,5 @@
 import * as React from "react";
-import { StyleSheet, View, Pressable, Text } from "react-native";
+import { StyleSheet, View, Pressable, Text, TouchableOpacity } from "react-native";
 import { Image } from "expo-image";
 import { useNavigation } from "@react-navigation/native";
 import { Color, FontFamily, Border, FontSize } from "../GlobalStyles";
@@ -13,9 +13,20 @@ const Onboarding1 = () => {
         style={styles.onboarding01Child}
         onPress={() => navigation.navigate("CreateAccount")}
       />
-      <Text style={[styles.getStarted, styles.getStartedFlexBox]}>
+
+  <TouchableOpacity
+    style={styles.getStartedFlexBox}
+    onPress={() => {
+      this.props.navigation.navigate('CreateAccount')
+    }}
+  >
+    <Text style={styles.getStarted}>Get Started</Text>
+  </TouchableOpacity>
+
+      {/* <Text style={[styles.getStarted, styles.getStartedFlexBox]}>
         Get Started
-      </Text>
+      </Text> */}
+     
       <Text style={[styles.alreadyHaveAnContainer, styles.getStartedFlexBox]}>
         <Text style={styles.alreadyHaveAnAcount}>
           <Text style={styles.alreadyHaveAn}>Already Have An Acount?</Text>

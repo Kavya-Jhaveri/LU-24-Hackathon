@@ -56,7 +56,7 @@ const App = () => {
       <StatusBar style="auto" />
       <NavigationContainer>
         {hideSplashScreen ? (
-          <Stack.Navigator screenOptions={{ headerShown: false }}>
+          <Stack.Navigator screenOptions={{ headerShown: false, headerLeft: () => null,}}>
             <Stack.Screen
               name="Onboarding"
               component={Onboarding}

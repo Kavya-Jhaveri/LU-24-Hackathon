@@ -1,9 +1,11 @@
 import * as React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 import { Image } from "expo-image";
 import { Color, FontSize, FontFamily, Border } from "../GlobalStyles";
+import { useNavigation } from '@react-navigation/native';
 
 const SearchNoResults = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.searchNoResults}>
       <View style={styles.searchNoResultsChild} />
@@ -13,40 +15,36 @@ const SearchNoResults = () => {
       <View style={[styles.statusBar, styles.statusPosition]}>
         <View style={[styles.statusBarChild, styles.borderPosition]} />
         <View style={[styles.barsStatusBarIphoneL, styles.statusPosition]}>
-          <View style={styles.battery}>
-            <View style={[styles.border, styles.lineBorder]} />
-            <Image
-              style={styles.capIcon}
-              contentFit="cover"
-              source={require("../assets/cap.png")}
-            />
-            <View style={[styles.capacity, styles.capacityBg]} />
-          </View>
-          <Image
-            style={styles.wifiIcon}
-            contentFit="cover"
-            source={require("../assets/wifi.png")}
-          />
-          <Image
-            style={styles.cellularConnectionIcon}
-            contentFit="cover"
-            source={require("../assets/cellular-connection.png")}
-          />
-          <View style={styles.timeStyle}>
-            <Text style={styles.time}>9:41</Text>
-          </View>
+
+
         </View>
         <Text style={styles.dailyPractice}>Search</Text>
-        <Image
+
+        {/* display the image ../assets/sizes-iconarrow-back-ios.png and when clicked return to home.js */}
+        
+
+        
+        {/* <Image
           style={[styles.component1Icon, styles.iconLayout]}
           contentFit="cover"
           source={require("../assets/sizes-iconarrow-back-ios.png")}
-        />
-        <Image
+        /> */}
+
+    <TouchableOpacity
+      style={styles.container}
+      onPress={() => navigation.navigate('Home')}>
+      <Image
+        source={require('../assets/sizes-iconarrow-back-ios.png')} // Replace with your image path
+        style={styles.image}
+      />
+    </TouchableOpacity>
+
+
+        {/* <Image
           style={[styles.component2Icon, styles.iconLayout]}
           contentFit="cover"
           source={require("../assets/component-21.png")}
-        />
+        /> */}
       </View>
       <View style={[styles.line, styles.lineBorder]} />
       <Text style={[styles.nd, styles.ndFlexBox]}>nd</Text>
@@ -571,6 +569,14 @@ const styles = StyleSheet.create({
     height: "100%",
     left: "0%",
     top: "0%",
+  },
+  image: {
+    width: 705, // Adjust width as needed
+    height: 100, // Adjust height as needed
+    right: "-5.47%",
+    top: "16.74%",
+    width: "5.35%",
+    resizeMode: 'contain', // Adjust resizeMode as needed
   },
   capIcon: {
     height: "35.4%",
