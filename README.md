@@ -1,26 +1,21 @@
-<<<<<<< HEAD
-
 # LU-24-Hackathon
 
-=======
-
-# Recommended next steps:
-
-> > > > > > > Incoming
-
-<<<<<<< HEAD
 Lehigh '24 Lehigh Hacks for Health
-=======
-Note: Make sure you have installed native code dependencies [here](https://reactnative.dev/docs/environment-setup#installing-dependencies)
+
+<b>Unitrition<b>: <i>Unique University Nutrition<i>
+Mobile application exposing diverse and accessible nutrition personalized to university students’ health goals and taste preferences.
+
+Won: Most Impactful Solution
+
+
 
 ### To preview and run the project on your device:
 
-1. Open project folder in <u>Visual Studio Code</u>
-2. Run `npm install` in the terminal
-3. Run `npx expo start` in the terminal
-4. Run on For iOS device (only on MacOS)
+1. Clone project in <u>Visual Studio Code</u>
+2. cd into <u>my-app</u> folder
+3. Run `npm install` in the terminal
+4. Run `npx expo start` in the terminal
+5. Run on For iOS device (only on MacOS)
    1. Press `i` to view on iOS simulator or follow the instructions [here](https://docs.expo.dev/workflow/run-on-device/) to run on a physical device.
-5. Run on For android device
+6. Run on For android device
    1. Press `a` to view on Android Virtual Device or follow the instructions [here](https://docs.expo.dev/workflow/run-on-device/) to run on a physical device.
-
-> > > > > > > Incoming
