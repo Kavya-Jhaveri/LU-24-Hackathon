@@ -4,7 +4,9 @@ Lehigh '24 Lehigh Hacks for Health
 
 ## Unitrition:
 <i>Unique University Nutrition</i>
+
 Mobile application exposing diverse and accessible nutrition personalized to university students’ health goals and taste preferences.
+
 For more information: [Unitrition](https://docs.google.com/presentation/d/1Q4IBlV40Of6KiYcHKlgQoK2dJUzxdnma31WIXz25mac/edit?usp=sharing)
 
 <b>Won: Most Impactful Solution</b>
