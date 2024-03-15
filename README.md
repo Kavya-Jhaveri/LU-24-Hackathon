@@ -7,9 +7,11 @@ Lehigh '24 Lehigh Hacks for Health
 
 Mobile application exposing diverse and accessible nutrition personalized to university students’ health goals and taste preferences.
 
+Issue: College students often face challenges with their meals upon entering college. Their workload and unfamiliarity with suitable food options contribute to weight loss as they struggle to determine the most appropriate nutrition plan for themselves. Additionally, many students find themselves consuming only one or two meals a day due to excessive studying. Consequently, it becomes essential to provide them with resources to estimate their daily food requirements and make informed decisions about what to eat.
+
 For more information: [Unitrition](https://docs.google.com/presentation/d/1Q4IBlV40Of6KiYcHKlgQoK2dJUzxdnma31WIXz25mac/edit?usp=sharing)
 
-<b>Won: Most Impactful Solution</b>
+<b>Won Hackathon: Most Impactful Solution</b>
 
 
 ### To preview and run the project on your device:
