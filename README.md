@@ -3,6 +3,8 @@
 Lehigh '24 Lehigh Hacks for Health
 
 ## Unitrition:
+<img width="672" alt="Screenshot 2024-08-06 at 7 01 57 PM" src="https://github.com/user-attachments/assets/652d2cba-8494-4148-ba3a-b076a06712b0">
+
 <i>Unique University Nutrition</i>
 
 Mobile application exposing diverse and accessible nutrition personalized to university students’ health goals and taste preferences.
