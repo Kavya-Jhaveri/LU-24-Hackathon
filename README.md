@@ -17,7 +17,8 @@ Survey: Lehigh student food choice
 ![image](https://github.com/user-attachments/assets/cabf5526-b3c0-4821-ae66-abe7ec2bed8e)
 
 
-<i>Recap:<i>
+<i>Project Recap:<i>
+<p></p>
 <img width="672" alt="Screenshot 2024-08-06 at 7 01 57 PM" src="https://github.com/user-attachments/assets/652d2cba-8494-4148-ba3a-b076a06712b0">
 <img width="688" alt="Screenshot 2024-08-06 at 7 16 23 PM" src="https://github.com/user-attachments/assets/bd2463b4-b73f-4951-b716-795955e917ea">
 
