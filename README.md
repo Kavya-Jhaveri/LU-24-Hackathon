@@ -13,6 +13,10 @@ Mobile application exposing diverse and accessible nutrition personalized to uni
 
 Issue: College students often face challenges with their meals upon entering college. Their workload and unfamiliarity with suitable food options contribute to weight loss as they struggle to determine the most appropriate nutrition plan for themselves. Additionally, many students find themselves consuming only one or two meals a day due to excessive studying. Consequently, it becomes essential to provide them with resources to estimate their daily food requirements and make informed decisions about what to eat.
 
+Survey: Lehigh student food choice
+![image](https://github.com/user-attachments/assets/cabf5526-b3c0-4821-ae66-abe7ec2bed8e)
+
+
 <img width="672" alt="Screenshot 2024-08-06 at 7 01 57 PM" src="https://github.com/user-attachments/assets/652d2cba-8494-4148-ba3a-b076a06712b0">
 <img width="688" alt="Screenshot 2024-08-06 at 7 16 23 PM" src="https://github.com/user-attachments/assets/bd2463b4-b73f-4951-b716-795955e917ea">
 
